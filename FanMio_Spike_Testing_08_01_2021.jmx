@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="FanMio_Spike_Testing" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="-1095904894">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1391192468">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50614">325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="305718610">
+            <stringProp name="48687">120</stringProp>
+            <stringProp name="53652">675</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+          <collectionProp name="2019834125">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="54458">725</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-2049702800">
+            <stringProp name="48749">140</stringProp>
+            <stringProp name="1507578">1050</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="60">60</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="-646819860">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1508415">1110</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">*/*</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">authority</stringProp>
+              <stringProp name="Header.value">tr4e1e0r81.execute-api.eu-central-1.amazonaws.com</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">user-agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">origin</stringProp>
+              <stringProp name="Header.value">https://fanmio-web-feature-new-setup.run.fanmio.com</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">sec-fetch-site</stringProp>
+              <stringProp name="Header.value">cross-site</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">sec-fetch-mode</stringProp>
+              <stringProp name="Header.value">cors</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">sec-fetch-dest</stringProp>
+              <stringProp name="Header.value">empty</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">referer</stringProp>
+              <stringProp name="Header.value">https://fanmio-web-feature-new-setup.run.fanmio.com/</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">accept-language</stringProp>
+              <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-Test-Id</stringProp>
+              <stringProp name="Header.value">${testId}</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Creates random test id" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">vars.put(&apos;testId&apos;, Math.random().toString(16).substr(2, 10)); // e.g. 6de5ccdaa3
+
+</stringProp>
+          <stringProp name="scriptLanguage">javascript</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="BASE_URL_1" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_1</stringProp>
+              <stringProp name="Argument.value">fanmio-test.web.app</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_2" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_2</stringProp>
+              <stringProp name="Argument.value">fast.a.klaviyo.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_3" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_3</stringProp>
+              <stringProp name="Argument.value">test-f298hf2.fanmio.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_4" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_4</stringProp>
+              <stringProp name="Argument.value">www.google-analytics.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_5" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_5</stringProp>
+              <stringProp name="Argument.value">stats.g.doubleclick.net</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_6" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_6</stringProp>
+              <stringProp name="Argument.value">sentry.io</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_7" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_7</stringProp>
+              <stringProp name="Argument.value">jyga1j3f8d.execute-api.us-east-1.amazonaws.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_8" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_8</stringProp>
+              <stringProp name="Argument.value">www.googleapis.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_9" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_9</stringProp>
+              <stringProp name="Argument.value">securetoken.googleapis.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="stripePublishableKey" elementType="Argument">
+              <stringProp name="Argument.name">stripePublishableKey</stringProp>
+              <stringProp name="Argument.value">pk_test_51H7GApI12wxcQzPJaaen386h5LNEwmmBNdP9DdvMFbtfZDwFcHGUG8knHwbqOrvqrtggnY3ZICQM3faNbRJOkN7l00kfX8KrEB</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BASE_URL_11" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL_11</stringProp>
+              <stringProp name="Argument.value">stripe-lb-1009869315.us-east-1.elb.amazonaws.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+          <collectionProp name="DNSCacheManager.servers"/>
+          <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+          <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+        </DNSCacheManager>
+        <hashTree/>
+        <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+          <collectionProp name="AuthManager.auth_list"/>
+          <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+        </AuthManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">false</boolProp>
+          <boolProp name="CacheManager.controlledByThread">false</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">// Generates a random string
+import java.util.Random;
+import java.time.LocalDate;
+import java.time.*;
+import java.time.format.*;
+
+
+String localDateTime = LocalDateTime.now().toString();
+
+chars = &quot;0123456789-ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;;
+int string_length = 32;
+randomstring =&quot;&quot;;
+    for (int i=0; i&lt;string_length; i++) {
+        Random randomGenerator = new Random();
+      int randomInt = randomGenerator.nextInt(chars.length());
+        randomstring += chars.substring(randomInt,randomInt+1);                     
+    }
+
+vars.put(&quot;capUserEmail&quot;,randomstring+localDateTime +&quot;@fanmio.com&quot;);
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">// Generates a random string
+import java.util.Random;
+import java.time.LocalDate;
+import java.time.*;
+import java.time.format.*;
+
+
+String localDateTime = LocalDateTime.now().toString();
+
+chars = &quot;0123456789-ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;;
+int string_length = 32;
+randomstring =&quot;&quot;;
+    for (int i=0; i&lt;string_length; i++) {
+        Random randomGenerator = new Random();
+      int randomInt = randomGenerator.nextInt(chars.length());
+        randomstring += chars.substring(randomInt,randomInt+1);                     
+    }
+vars.put(&quot;customerId&quot;,&quot;CUSTOMER_&quot;+randomstring+localDateTime);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">
+// Generates a random string
+import java.util.Random;
+import java.time.LocalDate;
+import java.time.*;
+import java.time.format.*;
+
+
+String localDateTime = LocalDateTime.now().toString();
+
+chars = &quot;0123456789-ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz&quot;;
+int string_length = 32;
+randomstring =&quot;&quot;;
+    for (int i=0; i&lt;string_length; i++) {
+        Random randomGenerator = new Random();
+      int randomInt = randomGenerator.nextInt(chars.length());
+        randomstring += chars.substring(randomInt,randomInt+1);                     
+    }
+
+vars.put(&quot;cUId&quot;,&quot;CU_&quot;+randomstring+localDateTime);
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Count" enabled="true">
+          <stringProp name="CounterConfig.start">1</stringProp>
+          <stringProp name="CounterConfig.end"></stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">count</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">true</boolProp>
+          <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+          <stringProp name="maximumValue">99999999</stringProp>
+          <stringProp name="minimumValue">00000000</stringProp>
+          <stringProp name="outputFormat">00000000</stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed">00000001</stringProp>
+          <stringProp name="variableName">capRandomMobile</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Random data generate" enabled="true">
+          <stringProp name="scriptLanguage">javascript</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">vars.put(&apos;testId&apos;, Math.random().toString(16).substr(2, 10)); // e.g. 6de5ccdaa3
+vars.put(&apos;chargeId&apos;,&apos;ch_&apos;+Math.random().toString(16).substr(2, 16));
+vars.put(&apos;paymentMethodID&apos;, Math.random().toString(16).substr(2, 10));
+vars.put(&apos;ownerBackendUuid&apos;, Math.random().toString(16).substr(2, 10));
+vars.put(&apos;productPageId&apos;, Math.random().toString(16).substr(2, 10));
+vars.put(&apos;mainPurchaseFormId&apos;, Math.random().toString(16).substr(2, 10));
+vars.put(&apos;eventId&apos;, Math.random().toString(16).substr(2, 10));
+vars.put(&apos;activationEntries&apos;, Math.random().toString(16).substr(2, 10));
+
+
+
+var d = new Date();
+var n = d.getUTCMilliseconds();
+vars.put(&apos;currentTime&apos;, n)
+
+</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="05_BuyNowButton" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="05_https://82kadojwv1.execute-api.us-east-1.amazonaws.com/load/graphql-1" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;query&quot;: &quot;\n    mutation CreateCheckout($lineItems: [LineItemInput!]!, $customAttributes: CustomAttributeTypeScalar) {\n      createCheckout(\n        lineItems: $lineItems\n        customAttributes: $customAttributes\n      ) {\n        id\n      }\n    }\n  &quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;lineItems&quot;: [&#xd;
+      {&#xd;
+        &quot;quantity&quot;: 1,&#xd;
+        &quot;variantId&quot;: &quot;1lShtx5eb8ZKuiKpMlMbnHdvd7u&quot;,&#xd;
+        &quot;productId&quot;: &quot;1lShtr3Tyr6BH4pgoiDazDnLvaS&quot;,&#xd;
+        &quot;customAttributes&quot;: {&#xd;
+          &quot;_ownerBackendType&quot;: &quot;EcommerceProduct&quot;,&#xd;
+          &quot;_ownerBackendUuid&quot;: &quot;${ownerBackendUuid}&quot;&#xd;
+        }&#xd;
+      }&#xd;
+    ],&#xd;
+    &quot;customAttributes&quot;: {&#xd;
+	  &quot;_productPageId&quot;: &quot;JQUULgQqLyyHukWH5Xnd&quot;,&#xd;
+	  &quot;_referrerUrl&quot;: &quot;https://fanmio.com&quot;,&#xd;
+	  &quot;_mainPurchaseFormId&quot;: &quot;Gozajp5TnNt9FZd4wGsi_1609755487540&quot;,&#xd;
+	  &quot;_selectedEventSchedules&quot;: &quot;[{\&quot;eventId\&quot;:\&quot;QrtgtDysJrXoeQYrlqaN\&quot;,\&quot;recordingAccess\&quot;:{\&quot;isIncluded\&quot;:true,\&quot;upsell\&quot;:null}}]&quot;,&#xd;
+	  &quot;_activationEntries&quot;: &quot;[\&quot;b8d5003a-d44a-4c7f-b34f-2e76978a98be\&quot;]&quot;,&#xd;
+	  &quot;_upsellPurchaseFormIds&quot;: &quot;[]&quot;,&#xd;
+	  &quot;_userId&quot;: &quot;${cUId}&quot;&#xd;
+}&#xd;
+&#xd;
+  }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">load/graphql</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="cCheckoutId Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cCheckoutId</stringProp>
+              <stringProp name="RegexExtractor.regex">createCheckout&quot;:{&quot;id&quot;:&quot;(.+?)&quot;}}}</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="07_ContinueToShipping" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time_additionalTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+              <stringProp name="RandomTimer.range">100</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="07_https://82kadojwv1.execute-api.us-east-1.amazonaws.com/load/graphql-2" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;query&quot;: &quot;\n  mutation UpdateCheckout(\n      $checkoutId: String!\n      $checkout: UpdateCheckoutTypeInput!\n    ) {\n    updateCheckout(\n      checkoutId: $checkoutId\n      checkout: $checkout\n    ) {\n      checkoutDetails {\n        \n  paymentServices {\n    type\n    metaFields\n  }\n  shippingZones {\n    id\n    name\n    countries {\n      code\n      restOfWorld\n    }\n    rates {\n      id\n      name\n      price {\n        amount\n        currency\n      }\n    }\n  }\n\n      }\n      customerDetails {\n        \n  shippingAddress {\n    address1\n    address2\n    addressCode\n    city\n    company\n    country\n    countryCode\n    division\n    divisionCode\n    firstName\n    lastName\n    latitude\n    longitude\n    phone\n  }\n  billingAddress {\n    address1\n    address2\n    addressCode\n    city\n    company\n    country\n    countryCode\n    division\n    divisionCode\n    firstName\n    lastName\n    latitude\n    longitude\n    phone\n  }\n\n      }\n    }\n  }\n&quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;checkoutId&quot;: &quot;${cCheckoutId}&quot;,&#xd;
+    &quot;checkout&quot;: {&#xd;
+      &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+      &quot;userId&quot;: &quot;${cUId}&quot;,&#xd;
+      &quot;shippingAddress&quot;: {&#xd;
+        &quot;address1&quot;: &quot;TEST ADDRESS1 ${testId}&quot;,&#xd;
+        &quot;address2&quot;: &quot;&quot;,&#xd;
+        &quot;addressCode&quot;: &quot;411017&quot;,&#xd;
+        &quot;city&quot;: &quot;Pune&quot;,&#xd;
+        &quot;country&quot;: &quot;India&quot;,&#xd;
+        &quot;countryCode&quot;: &quot;IN&quot;,&#xd;
+        &quot;division&quot;: &quot;MH&quot;,&#xd;
+        &quot;firstName&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;TESTLN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;billingAddress&quot;: null,&#xd;
+      &quot;customAttributes&quot;: {&#xd;
+        &quot;marketingEmail&quot;: false&#xd;
+      },&#xd;
+      &quot;shippingRateZone&quot;: null&#xd;
+    }&#xd;
+  }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">load/graphql</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor - cZoneId" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">cZoneId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">data.updateCheckout.checkoutDetails.shippingZones[1].id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor - cRateId" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">cRateId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">data.updateCheckout.checkoutDetails.shippingZones[1].rates[0].id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="cZoneId Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cZoneId</stringProp>
+              <stringProp name="RegexExtractor.regex">}}]},{&quot;id&quot;:&quot;(.+?)&quot;,&quot;name</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="08_Continue_To_Payment" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="08_https://82kadojwv1.execute-api.us-east-1.amazonaws.com/load/graphql" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;query&quot;: &quot;\n  mutation UpdateCheckout(\n      $checkoutId: String!\n      $checkout: UpdateCheckoutTypeInput!\n    ) {\n    updateCheckout(\n      checkoutId: $checkoutId\n      checkout: $checkout\n    ) {\n      checkoutDetails {\n        \n  paymentServices {\n    type\n    metaFields\n  }\n  shippingZones {\n    id\n    name\n    countries {\n      code\n      restOfWorld\n    }\n    rates {\n      id\n      name\n      price {\n        amount\n        currency\n      }\n    }\n  }\n\n      }\n      customerDetails {\n        \n  shippingAddress {\n    address1\n    address2\n    addressCode\n    city\n    company\n    country\n    countryCode\n    division\n    divisionCode\n    firstName\n    lastName\n    latitude\n    longitude\n    phone\n  }\n  billingAddress {\n    address1\n    address2\n    addressCode\n    city\n    company\n    country\n    countryCode\n    division\n    divisionCode\n    firstName\n    lastName\n    latitude\n    longitude\n    phone\n  }\n\n      }\n    }\n  }\n&quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;checkoutId&quot;: &quot;${cCheckoutId}&quot;,&#xd;
+    &quot;checkout&quot;: {&#xd;
+      &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+      &quot;userId&quot;: &quot;${cUId}&quot;,&#xd;
+      &quot;shippingAddress&quot;: {&#xd;
+        &quot;address1&quot;: &quot;TEST ADDRESS1 ${testId}&quot;,&#xd;
+        &quot;address2&quot;: &quot;&quot;,&#xd;
+        &quot;addressCode&quot;: &quot;411017&quot;,&#xd;
+        &quot;city&quot;: &quot;Pune&quot;,&#xd;
+        &quot;country&quot;: &quot;India&quot;,&#xd;
+        &quot;countryCode&quot;: &quot;IN&quot;,&#xd;
+        &quot;division&quot;: &quot;MH&quot;,&#xd;
+        &quot;firstName&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;TESTLN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;billingAddress&quot;: null,&#xd;
+      &quot;customAttributes&quot;: {&#xd;
+        &quot;marketingEmail&quot;: false&#xd;
+      },&#xd;
+      &quot;shippingRateZone&quot;: {&#xd;
+        &quot;zoneId&quot;: &quot;${cZoneId}&quot;,&#xd;
+        &quot;rateId&quot;: &quot;${cRateId}&quot;&#xd;
+      }&#xd;
+    }&#xd;
+  }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">load/graphql</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="09_Pay_Now_Button" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="09_https://82kadojwv1.execute-api.us-east-1.amazonaws.com/load/graphql" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;query&quot;: &quot;\n  mutation PayNow(\n    $checkoutId: String!\n    $paymentService: paymentService!\n    $metaFields: CustomAttributeTypeScalar\n    $checkout: PayNowUpdateCheckoutInput\n  ) {\n    payNow(\n      checkoutId: $checkoutId\n      paymentService: $paymentService\n      metaFields: $metaFields\n      checkout: $checkout\n    ) {\n      id\n      accountId\n      paymentService\n      clientSecret\n    customerId\n         }\n  }\n&quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;checkoutId&quot;: &quot;${cCheckoutId}&quot;,&#xd;
+    &quot;paymentService&quot;: &quot;Stripe&quot;,&#xd;
+    &quot;metaFields&quot;: {&#xd;
+      &quot;stripeAccountId&quot;: &quot;acct_1H7GC7BmATZZFKDy&quot;&#xd;
+    },&#xd;
+    &quot;checkout&quot;: {&#xd;
+      &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+      &quot;userId&quot;: &quot;${cUId}&quot;,&#xd;
+      &quot;shippingAddress&quot;: {&#xd;
+        &quot;address1&quot;: &quot;TEST ADDRESS1 ${testId}&quot;,&#xd;
+        &quot;address2&quot;: &quot;&quot;,&#xd;
+        &quot;addressCode&quot;: &quot;411017&quot;,&#xd;
+        &quot;city&quot;: &quot;Pune&quot;,&#xd;
+        &quot;country&quot;: &quot;India&quot;,&#xd;
+        &quot;countryCode&quot;: &quot;IN&quot;,&#xd;
+        &quot;division&quot;: &quot;MH&quot;,&#xd;
+        &quot;firstName&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;TESTLN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;billingAddress&quot;: {&#xd;
+        &quot;address1&quot;: &quot;TEST ADDRESS1 ${testId}&quot;,&#xd;
+        &quot;address2&quot;: &quot;&quot;,&#xd;
+        &quot;addressCode&quot;: &quot;411017&quot;,&#xd;
+        &quot;city&quot;: &quot;Pune&quot;,&#xd;
+        &quot;country&quot;: &quot;India&quot;,&#xd;
+        &quot;countryCode&quot;: &quot;IN&quot;,&#xd;
+        &quot;division&quot;: &quot;MH&quot;,&#xd;
+        &quot;firstName&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;TESTLN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;customAttributes&quot;: {&#xd;
+        &quot;marketingEmail&quot;: false&#xd;
+      },&#xd;
+      &quot;shippingRateZone&quot;: {&#xd;
+        &quot;zoneId&quot;: &quot;${cZoneId}&quot;,&#xd;
+        &quot;rateId&quot;: &quot;${cRateId}&quot;&#xd;
+      }&#xd;
+    }&#xd;
+  }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">load/graphql</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor - CustomerID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">customerId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">data.payNow.customerId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor - Payment_Intent_id" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">payIntiD</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">data.payNow.id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="cStripePayNow Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cStripePayNow</stringProp>
+              <stringProp name="RegexExtractor.regex">payNow&quot;:{&quot;id&quot;:&quot;(.+?)&quot;,&quot;accountId</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="cStripeAccount Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cStripeAccount</stringProp>
+              <stringProp name="RegexExtractor.regex">accountId&quot;:&quot;(.+?)&quot;,&quot;paymentService</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="cStripeClientSecret Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cStripeClientSecret</stringProp>
+              <stringProp name="RegexExtractor.regex">clientSecret&quot;:&quot;(.+?)&quot;}}}</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - WebHook1_CreateCustomer webhook" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;id&quot;: &quot;${cStripePayNow}&quot;,&#xd;
+  &quot;object&quot;: &quot;event&quot;,&#xd;
+  &quot;account&quot;: &quot;${cStripeAccount}&quot;,&#xd;
+  &quot;api_version&quot;: &quot;2020-03-02&quot;,&#xd;
+  &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+  &quot;data&quot;: {&#xd;
+    &quot;object&quot;: {&#xd;
+      &quot;id&quot;: &quot;${customerId}&quot;,&#xd;
+      &quot;object&quot;: &quot;customer&quot;,&#xd;
+      &quot;address&quot;: null,&#xd;
+      &quot;balance&quot;: 0,&#xd;
+      &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+      &quot;currency&quot;: null,&#xd;
+      &quot;default_source&quot;: null,&#xd;
+      &quot;delinquent&quot;: false,&#xd;
+      &quot;description&quot;: null,&#xd;
+      &quot;discount&quot;: null,&#xd;
+      &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+      &quot;invoice_prefix&quot;: &quot;2FCDC996&quot;,&#xd;
+      &quot;invoice_settings&quot;: {&#xd;
+        &quot;custom_fields&quot;: null,&#xd;
+        &quot;default_payment_method&quot;: null,&#xd;
+        &quot;footer&quot;: null&#xd;
+      },&#xd;
+      &quot;livemode&quot;: false,&#xd;
+      &quot;metadata&quot;: {&#xd;
+        &quot;userId&quot;: &quot;${cUId}&quot;&#xd;
+      },&#xd;
+      &quot;name&quot;: null,&#xd;
+      &quot;next_invoice_sequence&quot;: 1,&#xd;
+      &quot;phone&quot;: null,&#xd;
+      &quot;preferred_locales&quot;: [],&#xd;
+      &quot;shipping&quot;: null,&#xd;
+      &quot;sources&quot;: {&#xd;
+        &quot;object&quot;: &quot;list&quot;,&#xd;
+        &quot;data&quot;: [],&#xd;
+        &quot;has_more&quot;: false,&#xd;
+        &quot;total_count&quot;: 0,&#xd;
+        &quot;url&quot;: &quot;/v1/customers/${customerId}/sources&quot;&#xd;
+      },&#xd;
+      &quot;subscriptions&quot;: {&#xd;
+        &quot;object&quot;: &quot;list&quot;,&#xd;
+        &quot;data&quot;: [],&#xd;
+        &quot;has_more&quot;: false,&#xd;
+        &quot;total_count&quot;: 0,&#xd;
+        &quot;url&quot;: &quot;/v1/customers/${customerId}/subscriptions&quot;&#xd;
+      },&#xd;
+      &quot;tax_exempt&quot;: &quot;none&quot;,&#xd;
+      &quot;tax_ids&quot;: {&#xd;
+        &quot;object&quot;: &quot;list&quot;,&#xd;
+        &quot;data&quot;: [],&#xd;
+        &quot;has_more&quot;: false,&#xd;
+        &quot;total_count&quot;: 0,&#xd;
+        &quot;url&quot;: &quot;/v1/customers/${customerId}/tax_ids&quot;&#xd;
+      }&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;livemode&quot;: false,&#xd;
+  &quot;pending_webhooks&quot;: 4,&#xd;
+  &quot;request&quot;: {&#xd;
+    &quot;id&quot;: &quot;${payIntiD}&quot;,&#xd;
+    &quot;idempotency_key&quot;: null&#xd;
+  },&#xd;
+  &quot;type&quot;: &quot;customer.created&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">au4b07iizj.execute-api.us-east-1.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/load/webhook</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - WebHook2_Paymentmethod.attached webhook " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;id&quot;: &quot;${cStripePayNow}&quot;,&#xd;
+  &quot;object&quot;: &quot;event&quot;,&#xd;
+  &quot;account&quot;: &quot;${cStripeAccount}&quot;,&#xd;
+  &quot;api_version&quot;: &quot;2020-03-02&quot;,&#xd;
+  &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+  &quot;data&quot;: {&#xd;
+    &quot;object&quot;: {&#xd;
+      &quot;id&quot;: &quot;${paymentMethodID}&quot;,&#xd;
+      &quot;object&quot;: &quot;payment_method&quot;,&#xd;
+      &quot;billing_details&quot;: {&#xd;
+        &quot;address&quot;: {&#xd;
+          &quot;city&quot;: &quot;Linden&quot;,&#xd;
+          &quot;country&quot;: &quot;US&quot;,&#xd;
+          &quot;line1&quot;: &quot;1700 W Blancke St&quot;,&#xd;
+          &quot;line2&quot;: null,&#xd;
+          &quot;postal_code&quot;: &quot;07036&quot;,&#xd;
+          &quot;state&quot;: &quot;NJ or New Jersey&quot;&#xd;
+        },&#xd;
+        &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+        &quot;name&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;card&quot;: {&#xd;
+        &quot;brand&quot;: &quot;visa&quot;,&#xd;
+        &quot;checks&quot;: {&#xd;
+          &quot;address_line1_check&quot;: null,&#xd;
+          &quot;address_postal_code_check&quot;: null,&#xd;
+          &quot;cvc_check&quot;: &quot;pass&quot;&#xd;
+        },&#xd;
+        &quot;country&quot;: &quot;US&quot;,&#xd;
+        &quot;exp_month&quot;: 4,&#xd;
+        &quot;exp_year&quot;: 2024,&#xd;
+        &quot;fingerprint&quot;: &quot;O5OBNmohWaYnrcEt&quot;,&#xd;
+        &quot;funding&quot;: &quot;credit&quot;,&#xd;
+        &quot;generated_from&quot;: null,&#xd;
+        &quot;last4&quot;: &quot;4242&quot;,&#xd;
+        &quot;networks&quot;: {&#xd;
+          &quot;available&quot;: [&#xd;
+            &quot;visa&quot;&#xd;
+          ],&#xd;
+          &quot;preferred&quot;: null&#xd;
+        },&#xd;
+        &quot;three_d_secure_usage&quot;: {&#xd;
+          &quot;supported&quot;: true&#xd;
+        },&#xd;
+        &quot;wallet&quot;: null&#xd;
+      },&#xd;
+      &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+      &quot;customer&quot;: &quot;${customerId}&quot;,&#xd;
+      &quot;livemode&quot;: false,&#xd;
+      &quot;metadata&quot;: {},&#xd;
+      &quot;type&quot;: &quot;card&quot;&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;livemode&quot;: false,&#xd;
+  &quot;pending_webhooks&quot;: 4,&#xd;
+  &quot;request&quot;: {&#xd;
+    &quot;id&quot;: &quot;${payIntiD}&quot;,&#xd;
+    &quot;idempotency_key&quot;: null&#xd;
+  },&#xd;
+  &quot;type&quot;: &quot;payment_method.attached&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">au4b07iizj.execute-api.us-east-1.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/load/webhook</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - WebHook3_Charge.succeed webhook" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;id&quot;: &quot;${cStripeAccount}&quot;,&#xd;
+  &quot;object&quot;: &quot;event&quot;,&#xd;
+  &quot;account&quot;: &quot;${cStripeAccount}&quot;,&#xd;
+  &quot;api_version&quot;: &quot;2020-03-02&quot;,&#xd;
+  &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+  &quot;data&quot;: {&#xd;
+    &quot;object&quot;: {&#xd;
+      &quot;id&quot;: &quot;${chargeId}&quot;,&#xd;
+      &quot;object&quot;: &quot;charge&quot;,&#xd;
+      &quot;amount&quot;: 13999,&#xd;
+      &quot;amount_captured&quot;: 13999,&#xd;
+      &quot;amount_refunded&quot;: 0,&#xd;
+      &quot;application&quot;: &quot;ca_HgdUv5osqnkytkOMeX8k9mxS8SDYL5cl&quot;,&#xd;
+      &quot;application_fee&quot;: null,&#xd;
+      &quot;application_fee_amount&quot;: null,&#xd;
+      &quot;balance_transaction&quot;: &quot;txn_1HzeouBmATZZFKDyQf7al239&quot;,&#xd;
+      &quot;billing_details&quot;: {&#xd;
+        &quot;address&quot;: {&#xd;
+          &quot;city&quot;: &quot;Linden&quot;,&#xd;
+          &quot;country&quot;: &quot;US&quot;,&#xd;
+          &quot;line1&quot;: &quot;1700 W Blancke St&quot;,&#xd;
+          &quot;line2&quot;: null,&#xd;
+          &quot;postal_code&quot;: &quot;07036&quot;,&#xd;
+          &quot;state&quot;: &quot;NJ or New Jersey&quot;&#xd;
+        },&#xd;
+        &quot;email&quot;: &quot;${capUserEmail}&quot;,&#xd;
+        &quot;name&quot;: &quot;TESTFN${testId}&quot;,&#xd;
+        &quot;phone&quot;: &quot;9${capRandomMobile}0&quot;&#xd;
+      },&#xd;
+      &quot;calculated_statement_descriptor&quot;: &quot;FANMIO INC. (TEST)&quot;,&#xd;
+      &quot;captured&quot;: true,&#xd;
+      &quot;created&quot;: &quot;${currentTime}&quot;,&#xd;
+      &quot;currency&quot;: &quot;usd&quot;,&#xd;
+      &quot;customer&quot;: &quot;${customerId}&quot;,&#xd;
+      &quot;description&quot;: null,&#xd;
+      &quot;destination&quot;: null,&#xd;
+      &quot;dispute&quot;: null,&#xd;
+      &quot;disputed&quot;: false,&#xd;
+      &quot;failure_code&quot;: null,&#xd;
+      &quot;failure_message&quot;: null,&#xd;
+      &quot;fraud_details&quot;: {},&#xd;
+      &quot;invoice&quot;: null,&#xd;
+      &quot;livemode&quot;: false,&#xd;
+      &quot;metadata&quot;: {&#xd;
+        &quot;userId&quot;: &quot;${cUId}&quot;&#xd;
+      },&#xd;
+      &quot;on_behalf_of&quot;: null,&#xd;
+      &quot;order&quot;: null,&#xd;
+      &quot;outcome&quot;: {&#xd;
+        &quot;network_status&quot;: &quot;approved_by_network&quot;,&#xd;
+        &quot;reason&quot;: null,&#xd;
+        &quot;risk_level&quot;: &quot;normal&quot;,&#xd;
+        &quot;risk_score&quot;: 25,&#xd;
+        &quot;seller_message&quot;: &quot;Payment complete.&quot;,&#xd;
+        &quot;type&quot;: &quot;authorized&quot;&#xd;
+      },&#xd;
+      &quot;paid&quot;: true,&#xd;
+      &quot;payment_intent&quot;: &quot;${payIntiD}&quot;,&#xd;
+      &quot;payment_method&quot;: &quot;${paymentMethodID}&quot;,&#xd;
+      &quot;payment_method_details&quot;: {&#xd;
+        &quot;card&quot;: {&#xd;
+          &quot;brand&quot;: &quot;visa&quot;,&#xd;
+          &quot;checks&quot;: {&#xd;
+            &quot;address_line1_check&quot;: null,&#xd;
+            &quot;address_postal_code_check&quot;: null,&#xd;
+            &quot;cvc_check&quot;: &quot;pass&quot;&#xd;
+          },&#xd;
+          &quot;country&quot;: &quot;US&quot;,&#xd;
+          &quot;exp_month&quot;: 4,&#xd;
+          &quot;exp_year&quot;: 2024,&#xd;
+          &quot;fingerprint&quot;: &quot;O5OBNmohWaYnrcEt&quot;,&#xd;
+          &quot;funding&quot;: &quot;credit&quot;,&#xd;
+          &quot;installments&quot;: null,&#xd;
+          &quot;last4&quot;: &quot;4242&quot;,&#xd;
+          &quot;network&quot;: &quot;visa&quot;,&#xd;
+          &quot;three_d_secure&quot;: null,&#xd;
+          &quot;wallet&quot;: null&#xd;
+        },&#xd;
+        &quot;type&quot;: &quot;card&quot;&#xd;
+      },&#xd;
+      &quot;receipt_email&quot;: null,&#xd;
+      &quot;receipt_number&quot;: null,&#xd;
+      &quot;receipt_url&quot;: &quot;https://pay.stripe.com/receipts/acct_1H7GC7BmATZZFKDy/${chargeId}/rcpt_IaqVklfLqaCOtkxq6anNelfO0AGj0Ih&quot;,&#xd;
+      &quot;refunded&quot;: false,&#xd;
+      &quot;refunds&quot;: {&#xd;
+        &quot;object&quot;: &quot;list&quot;,&#xd;
+        &quot;data&quot;: [],&#xd;
+        &quot;has_more&quot;: false,&#xd;
+        &quot;total_count&quot;: 0,&#xd;
+        &quot;url&quot;: &quot;/v1/charges/${chargeId}/refunds&quot;&#xd;
+      },&#xd;
+      &quot;review&quot;: null,&#xd;
+      &quot;shipping&quot;: null,&#xd;
+      &quot;source&quot;: null,&#xd;
+      &quot;source_transfer&quot;: null,&#xd;
+      &quot;statement_descriptor&quot;: null,&#xd;
+      &quot;statement_descriptor_suffix&quot;: null,&#xd;
+      &quot;status&quot;: &quot;succeeded&quot;,&#xd;
+      &quot;transfer_data&quot;: null,&#xd;
+      &quot;transfer_group&quot;: null&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;livemode&quot;: false,&#xd;
+  &quot;pending_webhooks&quot;: 5,&#xd;
+  &quot;request&quot;: {&#xd;
+    &quot;id&quot;: &quot;${payIntiD}&quot;,&#xd;
+    &quot;idempotency_key&quot;: null&#xd;
+  },&#xd;
+  &quot;type&quot;: &quot;charge.succeeded&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">au4b07iizj.execute-api.us-east-1.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/load/webhook</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\dasba\OneDrive\Desktop\Yogiti_Related\Project_Related\Fanmio_performance\New Microsoft Excel Worksheet.csv</stringProp>
+          <boolProp name="ResultCollector.success_only_logging">true</boolProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
